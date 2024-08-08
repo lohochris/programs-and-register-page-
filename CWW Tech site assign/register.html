@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - CWW Tech Africa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register</h2>
+        <form action="submit_registration.php" method="POST">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="program">Program:</label>
+            <select id="program" name="program" required>
+                <option value="cohort">CTA Cohort Program</option>
+                <option value="soft_skills">Soft Skills Program</option>
+                <option value="bootcamp">Bootcamp Program</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
